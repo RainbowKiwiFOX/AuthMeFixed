@@ -1,4 +1,4 @@
-AuthMeReloaded-Jenkins
+AuthMeFixed
 ======================
 
-AuthMeReloaded Maven project
+Маленькие фиксы в AuthMe Reloaded от RainbowKiwiFOX.
