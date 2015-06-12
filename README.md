@@ -1,4 +1,5 @@
 AuthMeFixed
 ======================
 
-Маленькие фиксы в AuthMe Reloaded от RainbowKiwiFOX.
+Маленькие фиксы в AuthMe Reloaded от RainbowKiwiFOX:
+- Защита смены регистра ника. Игроков, сменивших регистр ника будет выкидывать.

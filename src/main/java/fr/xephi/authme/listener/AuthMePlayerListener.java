@@ -400,7 +400,13 @@ public class AuthMePlayerListener implements Listener {
                     }
                 }
         }
-
+        PlayerAuth auth = this.data.getAuth(name);
+        if ((auth != null) &&
+            (!name.equals(auth.getNickname())))
+            {
+                event.disallow(PlayerLoginEvent.Result.KICK_OTHER, "§fВы неверно ввели регистр вашего ника. Ваш ник:§6 " + auth.getNickname());
+                return;
+        }
         if (plugin.getCitizensCommunicator().isNPC(player, plugin) || Utils.getInstance().isUnrestricted(player) || CombatTagComunicator.isNPC(player)) {
             return;
         }
